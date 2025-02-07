@@ -13,12 +13,14 @@ a = turtle.Turtle()
 a.speed(1)
 a.pensize(8)
 
+# intro message
 a.penup()
 a.goto(-50,-100)
 a.color("black")
 a.pendown()
 a.write("Welcome to the Interactive Maze Game!", font=(24))
 
+# creating the maze walls
 a.color("green")
 a.penup()
 a.goto(0,0)
@@ -61,8 +63,7 @@ a.right(90)
 a.forward(70)
 a.penup()
 
-#number1 = input("Enter the x coordinates you want to start the maze at: ")
-#number2 = input("Enter the y coordinates you want to start the maze at: ")
+# user runs the maze
 a.goto(10,0)
 a.right(90)
 a.color("purple")
@@ -83,7 +84,6 @@ a.forward(distance2)
 a.left(90)
 
 # 100 then 60 then 50
-
 for i in range(3):
     distance3 = 0.0
     distance3 = int(screen.textinput("Input", "Enter distance to travel:"))
